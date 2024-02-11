@@ -68,6 +68,7 @@ class IntegrationTest(unittest.TestCase):
         # Check that user is not logged in
         browser.visit("http://testrp:8081")
         self.assertTrue(browser.is_text_not_present("Current user:"))
+        print("hello world")
 
         self.perform_login(browser)
 
